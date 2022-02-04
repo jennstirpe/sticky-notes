@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+.app-header__title {
+  margin: 10px 20px 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 38px;
+  color: #2d7f7b;
+}
+
+.app-header__controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.search,
+.add-new {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+  background: linear-gradient(#fff, #2d7f7b22);
+  color: #4b4b4b;
+  border-radius: 5px;
+  border: 1px solid #2d7f7b22;
+}
+
+.search:hover {
+  border: 1px solid #2d7f7b73;
+}
+
+.add-new {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  font-weight: bolder;
+  background-color: #2d7f7b;
+  color: white;
+  outline: none;
+}
+
+.add-new:hover {
+  background-color: #2d7f7be6;
+}
+
+.note {
+  font-family: "Permanent Marker", cursive;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #2d7f7b22;
+  border: 1px solid #2d7f7b;
+  box-shadow: 2px 2px 3px lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.note__title,
+.note__description {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+}
+
+.note__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.note__title:focus,
+.note__title:hover {
+  font-size: 18px;
+}
+
+.note__description {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+.note__description:focus,
+.note__description:hover {
+  font-weight: bold;
+}
+
+.note__delete {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d7f7b;
+  padding: 5px;
+}
+
+.note__delete:hover {
+  color: black;
+  cursor: pointer;
+  font-size: 22px;
+  top: 3px;
+}
